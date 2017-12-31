@@ -8,7 +8,6 @@ const convert = () => {
 	.fromFile(csvFilePath)
 	.on('json',(jsonObj)=>{
 		// combine csv header row and csv line to a json object
-		console.log(jsonObj) 
 		conv.push(jsonObj)
 	})
 	.on('done',(error)=>{
